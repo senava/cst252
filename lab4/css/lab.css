@@ -1,1 +1,13 @@
 
+.major-section{
+  background: #A6B9F3;
+  padding: 5px;
+}
+
+footer{
+  margin-top: 25px; 
+  width: 100%;
+  background: lavenderblush;
+  float: right;
+  text-align: center;
+}
