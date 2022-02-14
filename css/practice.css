@@ -11,18 +11,15 @@ body{
   background-attachment: fixed;
 }
 
-/*Title Style*/
-
 .title{
   text-align: center;
   font-family: "Courier New", monospace;
   margin-bottom: 50px;
   padding: 15px;
-  background-color: #b3e0eecf;
-  color: #8E6BBF;
+  background-color: lightblue;
+  color: purple;
 }
 
-/*Different section styles/ grid view for page*/
 .col-1 {width: 20%;}
 .col-2 {width: 70%;}
 .col-3 {width: 45%;}
@@ -40,19 +37,6 @@ body{
 }
 
 [class*="col-"] {float: left;}
-
-/*Lab styling*/
-.labs{
-  padding: 1px 10px 85px 10px;
-  margin: 0px 0px 25px 30px;
-  border: solid 1px white;
-  border-radius: 10px;
-  background-color: lightgrey;
-}
-
-.labs .headings{
-  margin: 1px -5px 10px -5px;
-}
 
 .labs li{
   padding: 8px;
@@ -78,7 +62,6 @@ a:link{
 a:active {text-decoration: underline;}
 a:visited {color: purple}
 
-/*Styling for different boxes*/
 .headings{
   border: solid .5px darkcyan;
   border-radius: 5px;
@@ -116,7 +99,18 @@ a:visited {color: purple}
   background-color: lightgrey;
 }
 
-/*Styling for Credits Section*/
+.labs{
+  padding: 1px 10px 85px 10px;
+  margin: 0px 0px 25px 30px;
+  border: solid 1px white;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+.labs .headings{
+  margin: 1px -5px 10px -5px;
+}
+
 .credits{
   padding: 1px 10px 85px 10px;
   margin: 0px 0px 25px 30px;
@@ -125,7 +119,6 @@ a:visited {color: purple}
   background-color: lightgrey;
 }
 
-/*Styling for Images*/
 div.polaroid{
   width: 35%;
   background-color: white;
@@ -151,7 +144,7 @@ div.container{
 }
 
 #box4 img {
-  width: 280px;
+  width: 250px;
   height: 370px;
 }
 
@@ -173,6 +166,4 @@ div.gallery img{
 div.desc{
   padding: 15px;
   text-align: center;
-  font-size: 15px;
-  font-family: "Courier New", monospace;
 }
