@@ -19,7 +19,7 @@ var rMake = "Toyota",
 var sMake = "Toyota",
     sModel = "Tacoma",
     sColor = "White",
-    sYear = 2011,
+    sYear = 2006,
     sOwnIt = false;
 
 // calculate

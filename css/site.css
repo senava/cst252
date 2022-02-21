@@ -45,8 +45,8 @@ body{
 .labs{
   padding: 1px 10px 85px 10px;
   margin: 0px 0px 25px 30px;
-  border: solid 1px white;
-  border-radius: 10px;
+  border: solid 3px aliceblue;
+  border-radius: 5px;
   background-color: lightgrey;
 }
 
@@ -81,7 +81,7 @@ a:visited {color: purple}
 /*Styling for different boxes*/
 .headings{
   border: solid .5px darkcyan;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: -2px -47px 5px -8px;
   padding-left: 5px;
   background-color: darkcyan;
@@ -95,24 +95,24 @@ a:visited {color: purple}
 #box3{
   padding: 4px 50px 75px 10px;
   margin: 0px 0px 25px 30px;
-  border: solid 1px white;
-  border-radius: 10px;
+  border: solid 3px aliceblue;
+  border-radius: 5px;
   background-color: lightgrey;
 }
 
 #box4{
   padding: 4px 50px 20px 10px;
   margin: 20px 0px 10px 20px;
-  border: solid 1px white;
-  border-radius: 10px;
+  border: solid 3px aliceblue;
+  border-radius: 5px;
   background-color: lightgrey;
 }
 
 #box5{
   padding: 4px 50px 20px 10px;
   margin: 20px 0px 10px 20px;
-  border: solid 1px white;
-  border-radius: 10px;
+  border: solid 3px aliceblue;
+  border-radius: 5px;
   background-color: lightgrey;
 }
 
@@ -120,8 +120,8 @@ a:visited {color: purple}
 .credits{
   padding: 1px 10px 85px 10px;
   margin: 0px 0px 25px 30px;
-  border: solid 1px white;
-  border-radius: 10px;
+  border: solid 3px aliceblue;
+  border-radius: 5px;
   background-color: lightgrey;
 }
 
