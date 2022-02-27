@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #A6B9F3;
+  background-image: url("../../img/blue1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#lab9{
+  margin-left: 20px;
+}
+
+.end li{
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  background-color: #F6BBDB;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.end li:hover{
+  background-color: #FBE0CF;
+}
+
+.end ul{
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+
+a:link{
+  text-decoration: none;
+  color: #15637b;
+}
+a:active {text-decoration: underline;}
+a:visited {color: purple}
