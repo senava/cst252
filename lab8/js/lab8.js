@@ -53,3 +53,11 @@ setTimeout(function(){
   // message to appear after 10 seconds
   output.innerHTML = "Click the button below for a quote ^-^";
 }, 10000);
+
+// function to add text to given element
+function main(){
+  // get element by id
+  outputElement = document.getElementById("output");
+  // change contents of elements
+  outputElement.innerHTML = array.map(adding);
+}
