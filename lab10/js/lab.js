@@ -31,7 +31,7 @@ function sortName(str) {
  outputEl = document.getElementById("output");
  console.log("output element:", outputEl);
 
- // add an event listener to button
+ // add an event listener to my-button
  buttonEl.addEventListener("click", function(){
    // get value from name element
    var userName = inputEl.value;
