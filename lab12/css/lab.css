@@ -1,0 +1,227 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #A6B9F3;
+  background-image: url("../../img/blue2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Styling for bottom links */
+#next-lab,
+#sourcelink{
+  margin-left: 20px;
+}
+
+.end li{
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  background-color: #F6BBDB;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.end li:hover{
+  background-color: #FBE0CF;
+}
+
+.end ul{
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+
+a:link{
+  text-decoration: none;
+  color: #15637b;
+}
+a:active {text-decoration: underline;}
+a:visited {color: purple}
+
+.myBtn{
+  display: inline;
+  float: left;
+  width: 15%;
+  text-align: end;
+}
+
+#experiment, #result-section,
+#problem-section, #challenge-section,
+#lab-section{
+  font-family: 'Architects Daughter', cursive;
+}
+
+/* Styling for h4*/
+h4{
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Styling for buttons*/
+button{
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  padding: 14px;
+  margin-top: 15px;
+  border-radius: 50%;
+  border-color: cornsilk;
+  cursor: pointer;
+}
+
+button#input-button{
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 25px;
+  display: inline-block;
+  padding: 0;
+  color: black;
+}
+
+/* Challenge Section Styling */
+/* Credit to https://www.youtube.com/watch?v=JAdIgiGA0Lk for border design*/
+.challenge p {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: #A03472;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding: 15px;
+  direction: rtl;
+  background-color: #84C3BE;
+}
+
+.challenge p:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -7px;
+  background: transparent;
+  border: 5px dashed transparent;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #B44C43;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #BDECB6;
+    border-right-color: #BDECB6;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #F75E25;
+    border-right-color: #F75E25;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.challenge p:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -2px;
+  background: transparent;
+  border: 5px dashed transparent;
+  animation: animate2 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #FF7514;
+  }
+
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #BDECB6;
+    border-left-color: #BDECB6;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #FE0000;
+    border-left-color: #FE0000;
+  }
+}
+
+/* Problem Section Styling */
+#content{
+  display: none;
+  padding: 10px;
+  text-align: center;
+  background-color: #C4EEF2;
+  border: double 5px #A67458;
+  font-family: 'Sniglet', cursive;
+}
+
+/* Results Section Styling */
+#message{
+  display: none;
+}
+
+#output{
+  border: solid 2px black;
+  height: 400px;
+  margin-top: 10px;
+  overflow: scroll;
+  background-image: url("../img/squid.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#output p{
+  display: inline-block;
+  margin: 10px;
+  width: auto;
+  padding: 10px;
+  border-radius: 25px 25px 25px 0;
+  font-size: 15px;
+  font-family: 'Handlee', cursive;
+  clear: both;
+}
+
+#output p:nth-child(even){
+  background-color: grey;
+  color: white;
+  text-align: left;
+  float: left;
+}
+
+#output p:nth-child(odd){
+  background-color: blue;
+  color: white;
+  text-align: right;
+  float: right;
+  border-radius: 25px 25px 0 25px;
+}
