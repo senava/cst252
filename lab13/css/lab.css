@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #A6B9F3;
+  background-image: url("../../img/blue2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h4, a{
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+.info{
+  font-family: 'Short Stack', cursive;
+}
+
+#button{
+  font-family: 'Baloo 2', cursive;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: lightblue;
+}
+
+#input, #output{
+  font-family: 'Baloo 2', cursive;
+}
+
+.hat-area{
+  float: right;
+  padding: 5px;
+}
+
+/* Styling for bottom links */
+#next-lab,
+#sourcelink{
+  margin-left: 20px;
+}

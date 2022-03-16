@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #6649b8;
+}
+
+main,
+.link-box{
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+/*Title Style*/
+#title{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Baloo 2', cursive;
+  margin-bottom: 50px;
+  padding: 15px;
+  background-color: #b3e0eecf;
+  color: #8E6BBF;
+}
+
+p{
+  font-family: 'Baloo 2', cursive;
+}
+
+.row h3,
+.link-box h3{
+  font-family: 'Baloo 2', cursive;
+}
+
+.row{
+  margin-top: 55px;
+}
+
+.topbar{
+  border: solid 0.5px darkcyan;
+  border-radius: 2px;
+  margin: -5px -40px 25px -10px;
+  padding-left: 5px;
+  background-color: darkcyan;
+  color: white;
+  font-size: 14px;
+}
+
+#corner{
+  font-size: 18px;
+  margin-top: -20px;
+  border: 1px solid grey;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: grey;
+  float: right;
+  display: inline-grid;
+  align-content: center;
+  align-items: stretch;
+  justify-content: end;
+  justify-items: end;
+}
+
+.card{
+  padding: 5px 40px 95px 10px;
+  background-color: lightgrey;
+  border: 2px solid cadetblue;
+  border-radius: 8px;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  column-gap: 65px;
+}
+
+.card-bottom{
+  padding: 5px 40px 95px 10px;
+  background-color: lightgrey;
+  border: 2px solid cadetblue;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.link-box li{
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  background-color: #F6BBDB;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.link-box li:hover{
+  background-color: #FBE0CF;
+}
+
+.link-box ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link{
+  text-decoration: none;
+  color: #15637b;
+}
+a:active {text-decoration: underline;}
+a:visited {color: purple}
+
+ul.list{
+  padding-left: 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+p.info{
+  margin-top: 20px;
+}
+
+.center-title{
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline overline dotted cornflowerblue;
+}
