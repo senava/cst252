@@ -26,6 +26,7 @@ function sortingHat(name){
 
 // find button and add click function
 $("#button").click(function(){
+  debugger;
   //find input id and add variable to it
   var name = $("#input").val();
   // add variable to sortingHat for later usage

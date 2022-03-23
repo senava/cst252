@@ -6,6 +6,7 @@
 
 // find challenge button and add click handler
 $("#challenge-button").click(function(){
+  debugger;
   //toggle class for challenge area
   $("#challenge-section").toggleClass("challenge");
 })
@@ -13,6 +14,7 @@ $("#challenge-button").click(function(){
 // find problem button and add click handler
 // special thanks to https://www.w3schools.com/jquery/jquery_slide.asp
 $("#problem-button").click(function(){
+  debugger;
   //toggle class for problem area
   $("#content").slideToggle("slow");
 })
@@ -21,6 +23,7 @@ $("#problem-button").click(function(){
 $(document).ready(function(){
   // find results button and add click handler
   $("#result-button").click(function(){
+    debugger;
     // toggle class for messages
     $("#message").toggle("slow");
   })
@@ -28,6 +31,7 @@ $(document).ready(function(){
 
 // find button attached click handler
 $("#input-button").click(function(){
+  debugger;
 	// get value of input field
   var inputText = $("#input-text").val();
   // find output #div, add input value
@@ -39,6 +43,7 @@ colorArray = ["#BF045B", "#F28907", "#F2E205", "#09A603", "#17527F", "#485DD9", 
 
 var color1 = 0;
 $("#change-button").click(function(){
+  debugger;
 	$("#experiment").css("color", colorArray[color1]);
 	color1++;
 	console.log("Current color:", color1, colorArray[color1])

@@ -1,0 +1,37 @@
+body{
+  background-color: #A6B9F3;
+  background-image: url("../../img/blue2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h4, a, #output{
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+/* Styling for bottom links */
+#next-lab,
+#sourcelink{
+  margin-left: 20px;
+}
+
+.columns{
+  columns: 4;
+  column-gap: 20px;
+  transform: translate(15px, 15px);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: -25px;
+}
+
+#output{
+  margin-bottom: 20px;
+}
+
+#debugging-section{
+  padding-top: 20px;
+}
