@@ -1,0 +1,115 @@
+/* Special thanks to https://www.youtube.com/watch?v=jkaqJVtjb7I */
+
+:root{
+  --primary: rgb(0, 198, 255);
+  --secondary: rgb(0, 198, 255, 0.8);
+  --dark: rgb(0, 198, 255, 0.2);
+}
+
+.btn-bubbly {
+    padding: 1em 2em;
+    margin-top: 50px;
+    margin-right: 50px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    cursor: url(../img/iconmonstr-easter.png), auto;
+    position:relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px var(--secondary);
+  }
+
+/* Cursor style*/
+/* Special thanks to https://www.youtube.com/watch?v=FOC5RZHK_Gw&t=190s*/
+  #link-text, #daily-quote, #daily-reminder{
+    /*background-color: purple;*/
+    min-width: 14em;
+    margin: 2em auto;
+  }
+
+  .btn-bubbly:before,
+  .btn-bubbly:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 140%;
+    height: 100%;
+    left:-20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+
+  .btn-bubbly:before,
+  .btn-bubbly:after
+   {
+    display: none;
+    background-image:
+      radial-gradient(circle, var(--primary) 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, var(--primary) 20%, transparent 30%),
+      radial-gradient(circle, var(--primary) 20%, transparent 20%),
+      radial-gradient(circle, var(--primary) 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, var(--primary) 15%, transparent 20%),
+      radial-gradient(circle, var(--primary) 20%, transparent 20%),
+      radial-gradient(circle, var(--primary) 20%, transparent 20%),
+      radial-gradient(circle, var(--primary) 20%, transparent 20%),
+      radial-gradient(circle, var(--primary) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+  }
+
+  .btn-bubbly:before {
+    top: -75%;
+  }
+  .btn-bubbly:after {
+    bottom: -75%;
+  }
+
+  .btn-bubbly:active {
+    transform: scale(0.9);
+    background-color: var(--primary);
+    box-shadow: 0 2px 25px var(--black);
+  }
+
+  .btn-bubbly.animate:before {
+    display: block;
+    animation: bluetopBubbles ease-in-out 0.75s forwards;
+  }
+
+  .btn-bubbly.animate:after {
+    display: block;
+    animation: bluebottomBubbles ease-in-out 0.75s forwards;
+  }
+
+  @keyframes bluetopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  @keyframes bluebottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }

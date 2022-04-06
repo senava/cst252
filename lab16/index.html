@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Lab 16 - Javascript Classes and Objects</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/index.js" defer></script>
+  <script src="js/bubbly-btn.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/bubbly-btn.css">
+</head>
+<body>
+  <main>
+    <section class="title-section">
+      <div id="main-title">
+        <h1>Lab 16: Javascript Classes and Objectives</h1>
+      </div>
+    </section>
+    <div class="img-header">
+      <!--<img src="img/header.jpeg" alt="header image">-->
+    </div>
+    <section class="main-content">
+      <div class="left-column">
+        <div class="glass">
+          <div class="topbar">
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <div class="tab"></div>
+          </div>
+          <div class="search-bar">
+            <span class="icon">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <input type="text">
+            <img class="pfp" src="img/pfp.jpeg" alt="">
+          </div>
+          <div class="dashboard">
+            <div class="left-dash">
+              <div class="user">
+                <div class="picture">
+                  <img src="img/work-computer.gif" alt="">
+                </div>
+                <div class="user-title">
+                  <h2>Lab's Subject</h2>
+                </div>
+                <div class="caption">
+                  <figcaption>Work with your partner and create a JavaScript
+                  Constructor.</figcaption>
+                </div>
+              </div>
+            </div>
+            <div class="right-dash">
+              <div class="section-title">
+                <h2>Content</h2>
+                <input type="text" name="" value="">
+                <p>Click any button to reveal different content.</p>
+              </div>
+              <!--<div class="btn-container">
+                <button class="btn-bubbly">Challenges</button>
+                <button class="btn-bubbly">Problems</button>
+              </div>-->
+              <div class="cards">
+                <div class="challenges hidey">
+                  <img src="img/question.gif" alt="">
+                  <p>For this lab I didn't really run into any challenges. I was
+                  able to understand everything pretty well and get everything to
+                  get working.</p>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="problems hidey">
+                  <img src="img/question.gif" alt="">
+                  <p>I didn't really run into any problems for this assignment. Since
+                  most of the content was reviewed during class and I was able to
+                  work with the code within Replit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass">
+          <div class="topbar">
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <div class="tab"></div>
+          </div>
+          <div class="search-bar">
+            <span class="icon">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <input type="text">
+            <img class="pfp" src="img/pfp.jpeg" alt="">
+          </div>
+          <div class="dashboard">
+            <div class="left-dash">
+              <div class="user">
+                <div class="picture">
+                  <img src="img/transportation.gif" alt="">
+                </div>
+                <div class="results">
+                  <div id="output"></div>
+                </div>
+              </div>
+            </div>
+            <div class="right-dash">
+              <div class="section-title">
+                <h2>Results</h2>
+                <input type="text" name="" value="">
+              </div>
+              <div class= "cards">
+                <img src="" alt="">
+                <div class="card-info">
+                  <img src="img/celebrate.gif" alt="">
+                  <p>If everything went to plan, then you should be able to see
+                  the different modes of transportation I use to the left side
+                  of this paragraph.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <section class="sidebar">
+          <!-- <div class="reminder">
+            <h2>Daily Reminder</h2>
+            <input type="text" name="" value="">
+            <div class="character">
+              <img src="" alt="">
+              <p>Hello o/</p>
+            </div>
+            <button class="btn-bubbly" id="daily-reminder">Daily Reminder</button>
+          </div>
+          <div class="quote">
+            <h2>Daily Quote</h2>
+            <input type="text" name="" value="">
+            <div class="character">
+              <img src="" alt="">
+              <p>Hello o/</p>
+            </div>
+            <button class="btn-bubbly" id="daily-quote">Daily Quote</button>
+          </div> -->
+          <div class="links">
+            <h2>Links</h2>
+            <input type="text" name="" value="">
+            <a href="../index.html">
+              <button class="btn-bubbly" id="link-text">Back to Home</button>
+            </a>
+            <a href="css/index.css">
+              <button class="btn-bubbly" id="link-text">CSS Source</button>
+            </a>
+            <a href="js/index.js">
+              <button class="btn-bubbly" id="link-text">Javascript Source</button>
+            </a>
+            <a href="../lab15/index.html">
+              <button class="btn-bubbly" id="link-text">Previous Lab</button>
+            </a>
+            <a href="#">
+              <button class="btn-bubbly" id="link-text">Next Lab</button>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!--<section class="bonus-task">
+      <div class="glass">
+        <div class="topbar">
+          <span class="icon">
+            <ion-icon name="ellipse"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="ellipse"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="ellipse"></ion-icon>
+          </span>
+          <div class="tab"></div>
+        </div>
+        <div class="search-bar">
+          <span class="icon">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <input type="text">
+          <img class="pfp" src="img/pfp.jpeg" alt="">
+        </div>
+        <div class="dashboard">
+          <div class="left-dash">
+            <div class="user">
+              <div class="picture">
+                <img src="img/pc.gif" alt="">
+              </div>
+              <div class="user-title">
+                <h2>Surprise</h2>
+              </div>
+              <div class="btn-container">
+                <button class="btn-bubbly">Yeah</button>
+                <button class="btn-bubbly">Nope</button>
+              </div>
+            </div>
+          </div>
+          <div class="right-dash">
+            <div class="section-title">
+              <h2>Do you like Surprises?</h2>
+              <input type="text" name="" value="">
+              <p id="context">Choose Yes or No <br> ⬅️ Buttons can be found there.</p>
+            </div>
+            <div class= "cards hidey" id="yes">
+              <div class="card">
+                <img src="" alt="">
+                <div class="card-info">
+                  <p>Hey! Hiya o/ I heard you like surprises. Click any button
+                  you see on this card to see one. ^-^ Have a good one.</p>
+                  <div class="btn-container">
+                    <button class="btn-bubbly">Surprise 1</button>
+                    <button class="btn-bubbly">Surprise 2</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class= "cards hidey" id="no">
+              <div class="card">
+                <img src="" alt="">
+                <div class="card-info">
+                  <p>Oh.... Well no worries. You're all good, nothing to worry
+                  about. You didn't hurt my feelings or anything. Nope ^-^. Anywhooo...
+                  Have this little image of a ... Bye Bye o/</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+</body>
