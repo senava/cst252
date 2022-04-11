@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Lab 17 - Object-Oriented Design</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/index.js" defer></script>
+  <script src="../js/bubbly-btn.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/bubbly-btn.css">
+</head>
+<body>
+  <main>
+    <section class="title-section">
+      <div id="main-title">
+        <h1>Lab 17: Object-Oriented Design</h1>
+      </div>
+    </section>
+    <div class="img-header">
+      <!--<img src="img/header.jpeg" alt="header image">-->
+    </div>
+    <section class="main-content">
+      <div class="left-column">
+        <div class="glass">
+          <div class="topbar">
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <div class="tab"></div>
+          </div>
+          <div class="search-bar">
+            <span class="icon">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <input type="text">
+            <img class="pfp" src="img/pfp.jpeg" alt="">
+          </div>
+          <div class="dashboard">
+            <div class="left-dash">
+              <div class="user">
+                <div class="picture">
+                  <img src="img/work-computer.gif" alt="">
+                </div>
+                <div class="user-title">
+                  <h2>Lab's Subject</h2>
+                </div>
+                <div class="caption">
+                  <figcaption>Work with your partner and create a Javascript
+                  constructor.</figcaption>
+                </div>
+              </div>
+            </div>
+            <div class="right-dash">
+              <div class="section-title">
+                <h2>Content</h2>
+                <input type="text" name="" value="">
+                <p>Click any button to reveal different content.</p>
+              </div>
+              <div class="btn-container">
+                <button class="btn-bubbly challenge-toggle">Challenges</button>
+                <button class="btn-bubbly problem-toggle">Problems</button>
+              </div>
+              <div class="card-holder">
+                <div class="card challenges">
+                  <div id="challenge-section">
+                    <img src="img/question.gif" alt="" class="context-img">
+                    <div class="card-info">
+                      <p>For this lab I didn't really run into any challenges. I was
+                      able to understand everything pretty well and get everything to
+                      get working.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card problems">
+                <div id="problem-section">
+                  <img src="img/question.gif" alt="" class="context-img">
+                  <div class="card-info">
+                    <p>For this lab I didn't really run into any challenges. I was
+                    able to understand everything pretty well and get everything to
+                    get working.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass">
+          <div class="topbar">
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="ellipse"></ion-icon>
+            </span>
+            <div class="tab"></div>
+          </div>
+          <div class="search-bar">
+            <span class="icon">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <input type="text">
+            <img class="pfp" src="img/pfp.jpeg" alt="">
+          </div>
+          <div class="dashboard">
+            <div class="left-dash">
+              <div class="user">
+                <div class="picture">
+                  <img src="img/pikachu.png" alt="">
+                </div>
+                <div class="results">
+                  <div id="output"></div>
+                </div>
+              </div>
+            </div>
+            <div class="right-dash">
+              <div class="section-title">
+                <h2>Results</h2>
+                <input type="text" name="" value="">
+              </div>
+              <div class= "cards">
+                <img src="" alt="">
+                <div class="card-info">
+                  <img src="img/celebrate.gif" alt="" class="context-img">
+                  <p>If everything went to plan, then you should be able to see
+                  the different modes of transportation I use to the left side
+                  of this paragraph. <br> <br> Below are some buttons, feel free to
+                  click either one to reveal the different steps for the OOP
+                  Design for Hangman I created.</p>
+                </div>
+                <div class="btn-container">
+                  <button class="btn-bubbly one-toggle">Step 1</button>
+                  <button class="btn-bubbly two-toggle">Step 2</button>
+                  <button class="btn-bubbly three-toggle">Step 3</button>
+                  <button class="btn-bubbly four-toggle">Step 4</button>
+                </div>
+                <div class="card step-one">
+                  <div id="one-section">
+                    <div class="card-info">
+                      <h3>Step 1: Understand Problem</h3>
+                      <ul>
+                        <li>Set up game initial board and player</li>
+                        <li>draw the board</li>
+                        <li>Figure out the word player will be guessing</li>
+                        <li>Get guess from player</li>
+                        <li>check if letter is in the word or not</li>
+                        <li>game loop</li>
+                        <li>check if player guessed the word condition</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card step-two">
+                  <div id="two-section">
+                    <div class="card-info">
+                      <h3>Step 2: Pseudocode High Level Approach</h3>
+                      <ul>
+                        <li>Set up initial game</li>
+                          <ul>
+                            <li>Create game board</li>
+                            <li>Create Player</li>
+                          </ul>
+                        <li>Start game loop</li>
+                          <ul>
+                            <li>Render game board</li>
+                            <li>Render random word that will be guessed</li>
+                            <li>Ask for and validate guess from player</li>
+                            <li>If letter in the word is guessed</li>
+                              <ul>
+                                <li>Display letter in corresponding area</li>
+                                <li>keep looping</li>
+                              </ul>
+                            <li>Else</li>
+                              <ul>
+                                <li>Start placing the man on the board</li>
+                                <li>Let player guess different letter</li>
+                                <li>Keep looping</li>
+                              </ul>
+                            <li>If whole word is guessed before certain amount of guesses</li>
+                              <ul>
+                                <li>Display proper victory message</li>
+                                <li>Stop looping</li>
+                              </ul>
+                            <li>Else</li>
+                              <ul>
+                                <li>Display game over message</li>
+                                <li>Stop looping</li>
+                              </ul>
+                          </ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card step-three">
+                  <div id="three-section">
+                    <div class="card-info">
+                      <h3>Step 3: Assign Actions to Objects</h3>
+                      <ul>
+                        <li>Set up initial game [Hangman]</li>
+                          <ul>
+                            <li>Create game board [Board]</li>
+                            <li>Create Player [Player]</li>
+                          </ul>
+                        <li>Start game loop [Hangman]</li>
+                          <ul>
+                            <li>Render game board [Board]</li>
+                            <li>Render random word that will be guessed [Word]</li>
+                            <li>Ask for and validate guess from player [Player]</li>
+                            <li>If letter in the word is guessed [Word]</li>
+                              <ul>
+                                <li>Display letter in corresponding area [Board]</li>
+                                <li>keep looping [Hangman]</li>
+                              </ul>
+                            <li>Else</li>
+                              <ul>
+                                <li>Start placing the man on the board [Man]</li>
+                                <li>Let player guess different letter [Player]</li>
+                                <li>Keep looping [Hangman]</li>
+                              </ul>
+                            <li>If whole word is guessed before certain amount of guesses [Word]</li>
+                              <ul>
+                                <li>Display proper victory message</li>
+                                <li>Stop looping [Hangman]</li>
+                              </ul>
+                            <li>Else</li>
+                              <ul>
+                                <li>Display game over message</li>
+                                <li>Stop looping [Hangman]</li>
+                              </ul>
+                          </ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card step-four">
+                  <div id="four-section">
+                    <div class="card-info">
+                      <h3>Step 4: Make Javascript-ish Pseudocode</h3>
+                      <code>
+              					// Controls the game play <br>
+                      	// class Hangman <br>
+              						// initialize <br>
+              							// set up board <br>
+                            // set up player <br>
+                            // assign random generated word <br>
+              						// start game <br>
+              							// loop infinitely <br>
+              							  // call the board <br>
+                              // ask for guess from playerd <br>
+                              // check if guess is in the word <br>
+                                // display_guess_true <br>
+                                  // add to proper placing <br>
+                                // display_guess_false <br>
+                                  // start placing “hangman” <br>
+                                  // allow for more guesses <br>
+              							  // break loop IF whole word is guess <br>
+              						// check_game_over <br>
+              							// check_victory <br>
+
+              					  // check_victory <br>
+              							// IF word guess in X guesses = true <br>
+              								// display victory message <br>
+              							// ELSE <br>
+              									// display game over message <br>
+              				</code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <section class="sidebar">
+          <div class="reminder">
+            <h2>Daily Reminder</h2>
+            <input type="text" name="" value="">
+            <button class="btn-bubbly" id="daily-reminder">Daily Reminder</button>
+            <div class="character">
+              <img src="img/panda.png" alt="" class="sidebar-img">
+              <div id="character-reminder">
+                <p>"Strive for progress, not perfection." <br> -Anonymous</p>
+              </div>
+            </div>
+          </div>
+          <div class="quote">
+            <h2>Daily Quote</h2>
+            <input type="text" name="" value="">
+            <button class="btn-bubbly" id="daily-quote">Daily Quote</button>
+            <div class="character">
+              <img src="img/drink.png" alt="" class="sidebar-img">
+              <div id="character-quote">
+                <p>"You make a difference everyday! You are a good person. And
+                you know what goes around comes around. So don't you apologize for
+                your blessings, just enjoy them! It's your time!" <br> -Tammy Lynn Robinson</p>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <h2>Links</h2>
+            <input type="text" name="" value="">
+            <div class="button">
+              <button class="btn-bubbly" id="link-text" onclick="location.href='../index.html';">Back to Home</button>
+              <button class="btn-bubbly" id="link-text" onclick="location.href='css/index.css';">CSS Source</button>
+              <button class="btn-bubbly" id="link-text" onclick="location.href='js/index.js';">Javascript Source</button>
+              <button class="btn-bubbly" id="link-text" onclick="location.href='../lab16/index.html';">Previous Lab</button>
+              <button class="btn-bubbly" id="link-text" onclick="location.href='#';">Next Lab</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!--<section class="bonus-task">
+      <div class="glass">
+        <div class="topbar">
+          <span class="icon">
+            <ion-icon name="ellipse"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="ellipse"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="ellipse"></ion-icon>
+          </span>
+          <div class="tab"></div>
+        </div>
+        <div class="search-bar">
+          <span class="icon">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <input type="text">
+          <img class="pfp" src="img/pfp.jpeg" alt="">
+        </div>
+        <div class="dashboard">
+          <div class="left-dash">
+            <div class="user">
+              <div class="picture">
+                <img src="img/pc.gif" alt="">
+              </div>
+              <div class="user-title">
+                <h2>Surprise</h2>
+              </div>
+              <div class="btn-container">
+                <button class="btn-bubbly">Yeah</button>
+                <button class="btn-bubbly">Nope</button>
+              </div>
+            </div>
+          </div>
+          <div class="right-dash">
+            <div class="section-title">
+              <h2>Do you like Surprises?</h2>
+              <input type="text" name="" value="">
+              <p id="context">Choose Yes or No <br> ⬅️ Buttons can be found there.</p>
+            </div>
+            <div class= "cards hidey" id="yes">
+              <div class="card">
+                <img src="" alt="">
+                <div class="card-info">
+                  <p>Hey! Hiya o/ I heard you like surprises. Click any button
+                  you see on this card to see one. ^-^ Have a good one.</p>
+                  <div class="btn-container">
+                    <button class="btn-bubbly">Surprise 1</button>
+                    <button class="btn-bubbly">Surprise 2</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class= "cards hidey" id="no">
+              <div class="card">
+                <img src="" alt="">
+                <div class="card-info">
+                  <p>Oh.... Well no worries. You're all good, nothing to worry
+                  about. You didn't hurt my feelings or anything. Nope ^-^. Anywhooo...
+                  Have this little image of a ... Bye Bye o/</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+</body>

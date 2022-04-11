@@ -14,7 +14,7 @@
     color: #fff;
     border-radius: 5px;
     border:none;
-    cursor: url(../img/iconmonstr-easter.png), auto;
+    cursor: url(../img/cursor.png), auto;
     position:relative;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
     box-shadow: 0 2px 25px var(--secondary);
@@ -24,8 +24,8 @@
 /* Special thanks to https://www.youtube.com/watch?v=FOC5RZHK_Gw&t=190s*/
   #link-text, #daily-quote, #daily-reminder{
     /*background-color: purple;*/
-    min-width: 14em;
-    margin: 2em auto;
+    /*min-width: 14em;
+    margin: 2em 2em;*/
   }
 
   .btn-bubbly:before,

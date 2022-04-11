@@ -9,7 +9,7 @@ body{
 }
 
 .title-section{
-  /*outline: 1px solid black;*/
+  /* outline: 1px solid black; */
   text-align: center;
   padding: 1em;
   background-color: white;
@@ -50,25 +50,16 @@ body{
 }
 
 .main-content{
-  /*outline: 1px solid black;*/
+  /* outline: 2px solid black; */
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
   width: 100%;
   height: auto;
 }
 
-.glass{
-  max-height: 70vh;
-  max-width: 80%;
-  background: linear-gradient(to right bottom, #ffffff80, #ffffff40);
-  border-radius: 1rem;
-  margin: 2em 1em;
-  position: relative;
-}
-
-.dashboard{
-  display: flex;
-}
-
+/* dashboard styling */
+/* topbar */
 .topbar{
   border-radius: 15px 15px 0 0;
   border: 1px solid black;
@@ -104,6 +95,7 @@ body{
   color: #00bb00;
 }
 
+/* search bar styling */
 .search-bar{
   border: 1px solid black;
   position: relative;
@@ -127,6 +119,7 @@ body{
   background: lightgrey;
 }
 
+/* pfp styling */
 .pfp{
   position: absolute;
   right: 0.5rem;
@@ -135,6 +128,14 @@ body{
   border-radius: 50%;
 }
 
+/* dashboard glass styling */
+.glass{
+  background: linear-gradient(to right bottom, #ffffff80, #ffffff40);
+  border-radius: 1rem;
+  margin: 2em 1em;
+}
+
+/* dashboard content styling */
 .picture{
   display: flex;
   align-items: center;
@@ -144,7 +145,37 @@ body{
 
 .picture img{
   width: 30%;
+  height: auto;
   border-radius: 50%;
+}
+
+.dashboard{
+  display: flex;
+}
+
+.glass{
+  background: linear-gradient(to right bottom, #ffffff80, #ffffff40);
+  border-radius: 1rem;
+  margin: 2em 1em;
+  position: relative;
+}
+
+.left-column{
+  max-width: 75%;
+}
+
+.right-column{
+  max-width: 25%;
+  margin: 2em 2em;
+}
+
+/* left dash styling */
+.left-dash{
+  /* outline: 1px solid black; */
+  min-height: 60vh;
+  flex: 1;
+  background: linear-gradient(to right bottom, #ffffff80, #ffffff40);
+  border-radius: 0 2rem 2rem 1rem;
 }
 
 .user-title{
@@ -155,16 +186,9 @@ body{
   margin: 2em 1em;
 }
 
-.left-dash{
-  /*outline: 1px solid black;*/
-  min-height: 60vh;
-  flex: 1;
-  background: linear-gradient(to right bottom, #ffffff80, #ffffff40);
-  border-radius: 0 2rem 2rem 1rem;
-}
-
+/* right dash styling */
 .right-dash{
-  /*outline: 1px solid black;*/
+  /* outline: 1px solid black; */
   flex: 2;
   margin: 2rem 2rem 0 2rem;
 }
@@ -181,18 +205,43 @@ body{
 }
 
 .btn-container{
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.sidebar{
-  /*outline: black 1px solid;*/
-  padding: 2em 4em;
-  margin: 2em 2em;
+/* card info styling */
+.card-holder{
+  position: relative;
+  margin-top: 2em;
+}
+
+.card{
+  display: none;
+  top: 0;
+  left: 0;
   background: linear-gradient(to left top, #ffffff, #ffffff70);
-  border-radius: 1.5rem;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-  max-width: 20vw;
-  min-height: 130vh;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.context-img{
+  max-width: 10vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.challenge-section p,
+.problem-section p,
+.card-info p{
+  margin: 1rem;
+}
+
+#challenge-section,
+#problem-section,
+.card-info{
+  display: flex;
 }
 
 #output{
@@ -208,38 +257,43 @@ li::marker{
   font-size: 0.9em;
 }
 
-.cards{
+/* sidebar styling */
+.sidebar{
+  /* outline: 1px solid black; */
   background: linear-gradient(to left top, #ffffff, #ffffff70);
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.challenges img,
-.problems img,
-.card-info img{
-  width: 20%;
-}
-
-.challenges p,
-.problems p,
-.card-info p{
-  margin: 1rem;
-}
-
-.challenges,
-.problems,
-.card-info{
-  display: flex;
-}
-
-.bonus-task .card-info{
-  display: block;
-}
-
-.button{
-  min-width: 50%;
-  outline: 1px solid black;
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  min-height: 130vh;
   display: inline-block;
+}
+
+.reminder, .quote{
+  border-bottom: 1px solid black;
+}
+
+.reminder, .quote, .links{
+  padding: 2em 2em 8em 2em;
+}
+
+.links .button{
+  display: flex;
+  flex-direction: column;
+}
+
+#daily-reminder, #daily-quote{
+  margin-top: 1em;
+}
+
+.sidebar-img{
+  max-width: 15vw;
+  height: auto;
+  object-fit: contain;
+}
+
+#character-reminder, #character-quote{
+  display: none;
+}
+
+.step-one{
+  max-width: 50%;
 }
