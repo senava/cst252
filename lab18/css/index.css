@@ -50,13 +50,13 @@ body{
   height: 18em;
 }
 
-.col-md-3{
+/* .col-md-3{
   outline: 1px solid black;
 }
 
 .col-md-9{
   outline: 1px solid blue;
-}
+} */
 
 #myTab{
   margin-left: 2rem;

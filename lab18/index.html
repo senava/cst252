@@ -15,9 +15,9 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
-    <div class="container p-5 my-3 border col-7 title-section">
+    <div class="container p-5 my-3 col-7 title-section">
       <div id="main-title">
-        <h1>Lab 17: Object-Oriented Design</h1>
+        <h1>Lab 18: Libraries and Frameworks 1</h1>
       </div>
     </div>
     <div class="col col-sm-12">
@@ -25,7 +25,7 @@
         <img src="../img/header.jpeg">
       </div>
     </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../lab17/img/pfp.jpeg" alt="Logo" style="width:40px;" class="rounded-pill">
@@ -49,19 +49,46 @@
               <a class="nav-link" href="css/index.css">CSS Source</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Labs</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Labs 2-5</a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../lab2/index.html">Lab 2</a></li>
+                <li><a class="dropdown-item" href="../lab3/index.html">Lab 3</a></li>
+                <li><a class="dropdown-item" href="../lab4/index.html">Lab 4</a></li>
+                <li><a class="dropdown-item" href="../lab5/index.html">Lab 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Labs 6-9</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../lab6/index.html">Lab 6</a></li>
+                <li><a class="dropdown-item" href="../lab7/index.html">Lab 7</a></li>
+                <li><a class="dropdown-item" href="../lab8/index.html">Lab 8</a></li>
+                <li><a class="dropdown-item" href="../lab9/index.html">Lab 9</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Labs 10-13</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../lab10/index.html">Lab 10</a></li>
+                <li><a class="dropdown-item" href="../lab11/index.html">Lab 11</a></li>
+                <li><a class="dropdown-item" href="../lab12/index.html">Lab 12</a></li>
+                <li><a class="dropdown-item" href="../lab13/index.html">Lab 13</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Labs 14-17</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../lab14/index.html">Lab 14</a></li>
                 <li><a class="dropdown-item" href="../lab15/index.html">Lab 15</a></li>
                 <li><a class="dropdown-item" href="../lab16/index.html">Lab 16</a></li>
                 <li><a class="dropdown-item" href="../lab17/index.html">Lab 17</a></li>
-                <li><a class="dropdown-item" href="#">Lab 19</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container mt-5 border">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-md-3">
           <div class="sidebar">
@@ -69,14 +96,10 @@
               <h2>Daily Reminder</h2>
               <input type="text" name="" value="">
               <div class="sidebar-content">
-                <button class="btn-bubbly" id="daily-reminder">Daily Reminder</button>
+                <button type="button" class="btn btn-bubbly" data-bs-toggle="collapse" data-bs-target="#reminder">Daily Reminder</button>
+                  <div id="reminder" class="collapse">"All we have is now"</div>
                 <div class="character">
-                  <div class="character-reminder">
-                    <img src="../lab17/img/panda.png" alt="" class="sidebar-img">
-                    <div class="character-talk" id="talk-reminder">
-                      <p>"All we have is now"</p>
-                    </div>
-                  </div>
+                  <img src="../lab17/img/panda.png" alt="" class="sidebar-img">
                 </div>
               </div>
             </div>
@@ -84,12 +107,12 @@
               <h2>Daily Quote</h2>
               <input type="text" name="" value="">
               <div class="sidebar-content">
-                <button class="btn-bubbly" id="daily-quote">Daily Quote</button>
-                <div class="character character-quote">
-                  <img src="../lab17/img/drink.png" alt="" class="sidebar-img">
-                  <div class="character-talk" id="talk-quote">
+                <button type="button" class="btn btn-bubbly" data-bs-toggle="collapse" data-bs-target="#quote">Daily Quote</button>
+                  <div id="quote" class="collapse">
                     <p>"Wherever life plants you, bloom with grace." <br> -Anonymous</p>
                   </div>
+                <div class="character character-quote">
+                  <img src="../lab17/img/drink.png" alt="" class="sidebar-img">
                 </div>
               </div>
             </div>
@@ -148,8 +171,7 @@
                         <input type="text" name="" value="">
                       </div>
                       <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
+                        <figcaption>Work with your partner and experiment with Bootstrap.</figcaption>
                       </div>
                     </div>
                   </div>
@@ -165,8 +187,8 @@
                         <input type="text" name="" value="">
                       </div>
                       <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
+                        <figcaption>For this lab I didn't really run into any challenges.
+                        Everything went smoothly and I was able to get everything working.</figcaption>
                       </div>
                     </div>
                   </div>
@@ -182,8 +204,9 @@
                         <input type="text" name="" value="">
                       </div>
                       <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
+                        <figcaption>One problem I did run into was figuring out
+                        which Bootstrap links to use. But after I asked my partner,
+                        I was able to figure which ones to use.</figcaption>
                       </div>
                     </div>
                   </div>
@@ -199,120 +222,10 @@
                         <input type="text" name="" value="">
                       </div>
                       <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="glass mt-5">
-            <div class="topbar">
-              <span class="icon">
-                <ion-icon name="ellipse"></ion-icon>
-              </span>
-              <span class="icon">
-                <ion-icon name="ellipse"></ion-icon>
-              </span>
-              <span class="icon">
-                <ion-icon name="ellipse"></ion-icon>
-              </span>
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="lab-tab" data-bs-toggle="tab" data-bs-target="#lab" type="button" role="tab" aria-controls="lab" aria-selected="true">Lab Content</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="challenge-tab" data-bs-toggle="tab" data-bs-target="#challenge" type="button" role="tab" aria-controls="challenges" aria-selected="false">Challenges</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#problem" type="button" role="tab" aria-controls="problem" aria-selected="false">Problems</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="result-tab" data-bs-toggle="tab" data-bs-target="#result" type="button" role="tab" aria-controls="result" aria-selected="false">Results</button>
-                </li>
-              </ul>
-            </div>
-            <div class="search-bar">
-              <span class="icon">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-              </span>
-              <span class="icon">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </span>
-              <span class="icon">
-                <ion-icon name="home-outline"></ion-icon>
-              </span>
-              <input type="text">
-              <img class="pfp" src="../lab17/img/pfp.jpeg" alt="">
-            </div>
-            <div class="dashboard">
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="lab" role="tabpanel" aria-labelledby="lab-tab">
-                  <div class="cards">
-                    <div class="picture">
-                      <img src="../lab17/img/work-computer.gif" alt="">
-                    </div>
-                    <div class="user-info">
-                      <div class="user-title">
-                        <h2>Lab's Subject</h2>
-                        <input type="text" name="" value="">
-                      </div>
-                      <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="challenge" role="tabpanel" aria-labelledby="challenge-tab">
-                  <div class="cards">
-                    <div class="picture">
-                      <img src="img/challenge.gif" alt="" id="challenge-img">
-                    </div>
-                    <div class="user-info">
-                      <div class="user-title">
-                        <h2>Challenges</h2>
-                        <input type="text" name="" value="">
-                      </div>
-                      <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="problem" role="tabpanel" aria-labelledby="problem-tab">
-                  <div class="cards">
-                    <div class="picture">
-                      <img src="img/problem.gif" alt="">
-                    </div>
-                    <div class="user-info">
-                      <div class="user-title">
-                        <h2>Problems</h2>
-                        <input type="text" name="" value="">
-                      </div>
-                      <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="result" role="tabpanel" aria-labelledby="result-tab">
-                  <div class="cards">
-                    <div class="picture">
-                      <img src="img/result.gif" alt="" id="result-img">
-                    </div>
-                    <div class="user-info">
-                      <div class="user-title">
-                        <h2>Results</h2>
-                        <input type="text" name="" value="">
-                      </div>
-                      <div class="caption">
-                        <figcaption>Work with your partner and create a Javascript
-                        constructor.</figcaption>
+                        <figcaption>If everything went to plan, this page should
+                        all have the bootstrap layout. The JavaScript should be working
+                        as well. Like having the navbar stick to the top when the page
+                        is scrolled, and having some collapses and dropdowns.</figcaption>
                       </div>
                     </div>
                   </div>
