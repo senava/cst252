@@ -45,6 +45,7 @@ function getAjax(){
       var title = data.title;
       var img = data.img;
       var alt = data.alt;
+      // var data = data.num
       // Insert the output in the output div
       $("#output").html("<h2>" + title);
       $("#output").append("<img src=" + img + ">");
